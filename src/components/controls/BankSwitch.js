@@ -7,15 +7,18 @@ const BankSwitch = () => {
   const dispatch = useDispatch();
   const { whichBank } = useSelector(mapState);
   return (
-    <div>
-      <input
-        type="checkbox"
-        id="bank"
-        label="Bank"
-        checked={whichBank === "bankOne" ? true : false}
-        onChange={() => dispatch(toggleBank())}
-      />
-      Bank
+    <div className="bank-switch">
+      <div>{whichBank}</div>
+      <label className="switch">
+        <input
+          type="checkbox"
+          id="bank"
+          label="Bank"
+          checked={whichBank === "bankOne" ? true : false}
+          onChange={() => dispatch(toggleBank())}
+        />
+        <span className="slider"></span>
+      </label>
     </div>
   );
 };

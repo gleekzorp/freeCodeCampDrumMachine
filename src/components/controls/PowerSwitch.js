@@ -7,15 +7,18 @@ const PowerSwitch = () => {
   const dispatch = useDispatch();
   const { power } = useSelector(mapState);
   return (
-    <div>
-      <input
-        type="checkbox"
-        id="power"
-        label="Power"
-        checked={power}
-        onChange={() => dispatch(togglePower())}
-      />
-      Power
+    <div className="power-switch">
+      <div>Power</div>
+      <label className="switch">
+        <input
+          type="checkbox"
+          id="power"
+          label="Power"
+          checked={power}
+          onChange={() => dispatch(togglePower())}
+        />
+        <span class="slider"></span>
+      </label>
     </div>
   );
 };

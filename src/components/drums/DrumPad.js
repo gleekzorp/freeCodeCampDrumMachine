@@ -52,15 +52,10 @@ const DrumPad = (props) => {
   };
 
   return (
-    <button
-      className="drum-pad"
-      id={id}
-      ref={audioButtonRef}
-      onClick={handlePlay}
-    >
+    <div className="drum-pad" id={id} ref={audioButtonRef} onClick={handlePlay}>
       {keyTrigger}
       <audio ref={audioElement} className="clip" id={keyTrigger} src={url} />
-    </button>
+    </div>
   );
 };
 
