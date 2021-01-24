@@ -8,8 +8,9 @@ const VolumeSlider = () => {
   const { volume } = useSelector(mapState);
 
   return (
-    <div>
+    <div className="volume-slider-container">
       <input
+        className="volume-slider"
         type="range"
         min="0"
         max="1"
