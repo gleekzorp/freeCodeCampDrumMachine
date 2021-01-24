@@ -1,0 +1,4 @@
+export const TOGGLE_POWER = "TOGGLE_POWER";
+export const TOGGLE_BANK = "TOGGLE_BANK";
+export const CHANGE_VOLUME = "CHANGE_VOLUME";
+export const CHANGE_DISPLAY = "CHANGE_DISPLAY";
