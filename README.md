@@ -1,2 +1,0 @@
-# freeCodeCampDrumMachine
-Created with CodeSandbox
