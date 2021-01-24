@@ -1,4 +1,16 @@
-.drumpad-grid {
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.container {
+  display: flex;
+}
+
+.drumpad-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
