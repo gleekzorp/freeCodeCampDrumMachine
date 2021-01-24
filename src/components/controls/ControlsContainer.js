@@ -7,7 +7,7 @@ import BankSwitch from "./BankSwitch";
 
 const ControlsContainer = () => {
   return (
-    <div>
+    <div className="controls-container">
       <PowerSwitch />
       <ControlsDisplay />
       <VolumeSlider />

@@ -19,11 +19,7 @@ const DrumPadContainer = (props) => {
     });
   };
 
-  return (
-    <div className="drumpad-grid" id="drum-machine">
-      {renderDrumPads()}
-    </div>
-  );
+  return <div className="drumpad-container">{renderDrumPads()}</div>;
 };
 
 const mapStateToProps = (state) => {

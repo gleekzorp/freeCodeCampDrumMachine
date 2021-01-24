@@ -1,5 +1,4 @@
 import React from "react";
-import { Form } from "react-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
 import { toggleBank } from "../../redux/action";
@@ -8,15 +7,16 @@ const BankSwitch = () => {
   const dispatch = useDispatch();
   const { whichBank } = useSelector(mapState);
   return (
-    <Form>
-      <Form.Check
-        type="switch"
+    <div>
+      <input
+        type="checkbox"
         id="bank"
         label="Bank"
         checked={whichBank === "bankOne" ? true : false}
         onChange={() => dispatch(toggleBank())}
       />
-    </Form>
+      Bank
+    </div>
   );
 };
 

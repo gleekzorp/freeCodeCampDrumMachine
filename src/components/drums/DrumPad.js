@@ -10,12 +10,12 @@ const DrumPad = (props) => {
 
   const handlePlay = useCallback(() => {
     if (power) {
-      changeDisplay(keyTrigger);
+      changeDisplay(id);
       handleStyles();
       audioElement.current.currentTime = 0;
       audioElement.current.volume = volume;
       // audioElement.current.play();
-      // Had to do this to make not have an error pop up in chrome.
+      // Had to do this to not have an error pop up in chrome.
       const audioPromise = audioElement.current.play();
       if (audioPromise !== undefined) {
         audioPromise
@@ -30,7 +30,7 @@ const DrumPad = (props) => {
     } else {
       changeDisplay("Turn on the power!");
     }
-  }, [power, volume, changeDisplay, keyTrigger]);
+  }, [power, volume, changeDisplay, id]);
 
   useEffect(() => {
     const downHandler = (e) => {
