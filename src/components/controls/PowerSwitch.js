@@ -17,7 +17,7 @@ const PowerSwitch = () => {
           checked={power}
           onChange={() => dispatch(togglePower())}
         />
-        <span class="slider"></span>
+        <span className="slider"></span>
       </label>
     </div>
   );
