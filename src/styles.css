@@ -6,7 +6,16 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Russo One", sans-serif;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 #root {
@@ -18,6 +27,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -34,6 +44,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-top: 1em;
 }
 
 .drum-pad {
@@ -125,6 +136,11 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+.bank-switch {
+  width: 100px;
+  text-transform: capitalize;
+}
+
 /* Slider Stuff */
 /* https://www.w3schools.com/howto/howto_js_rangeslider.asp */
 .volume-slider-container {
@@ -189,5 +205,11 @@ input:checked + .slider:before {
 
   .volume-slider-container {
     width: 100%;
+  }
+
+  .logo {
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
   }
 }
